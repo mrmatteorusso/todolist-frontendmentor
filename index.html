@@ -9,16 +9,17 @@
   <title>Frontend Mentor | Todo app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- 
   Todo
-
-  <!-- Add dynamic number --> items left
+ items left
 
   All
   Active 
@@ -26,11 +27,29 @@
 
   Clear Completed
 
-  Drag and drop to reorder list
+  Drag and drop to reorder list -->
+  <form action="" class="add">
+      <h1>To do list</h1>
+      <!-- <label for="number">How many number?</label>
+      <input type="text" id="number" name="add">
+      <br>
+      <br> -->
+      <input type="text" id="name" name="add" placeholder="Enter name here">
+      <!-- <input type="text" id="role" placeholder="Enter role here"> -->
+      <!-- <input type="submit" value="submit them"> <p>you can also press enter instead</p> -->
+      <!-- <br>
+      <br> -->
+      <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+      <br>
+      <input type="submit" value="submit them"> -->
+  </form>
+
+  <ul class="todos"></ul>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
