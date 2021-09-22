@@ -5,9 +5,14 @@ let storedItems = localStorage.getItem('tasks');
 
 const generateTemplate = todo => {
     const html = `
-    <li>
-        <span>${todo}</span>
-        <i class="far fa-trash-alt delete"></i>
+    <li class="newList">
+        <div class="tick">
+            <input type="checkbox" id="" name="" value="">
+        </div>
+        <div class="content delete">
+            <span>${todo}</span>
+            <i class="fas fa-times delete"></i>
+        </div>
     </li>`
     
     list.innerHTML += html;
@@ -40,7 +45,7 @@ addForm.addEventListener('submit', e => {
 list.addEventListener('click', e => {
     console.log(e.target);
     if (e.target.classList.contains('delete')) {
-        e.target.parentElement.remove();
+        e.target.parentElement.parentElement.remove();
         let removedItem = e.target.parentElement.firstElementChild.innerText;
         console.log(`${removedItem} has been removed from the html list`);
         console.log(storedItems)

@@ -1,0 +1,23 @@
+corners for the borders only on the first item top right/left and last item bottom right/left
+FIRSTCHILD
+
+buttons:
+items left
+all 
+active
+completed
+clear completed
+
+line over text when clicked
+X only when hovering
+
+drag and drop
+
+
+
+to do
+shadow
+changing cursor to hand
+
+
+
