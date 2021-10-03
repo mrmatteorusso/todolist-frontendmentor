@@ -28,17 +28,38 @@
   Clear Completed
 
   Drag and drop to reorder list -->
- 
+  <div class="mainTitle">
+    <h1>TO DO</h1>
+  </div>
 
   <form action="" class="add">
-      <div class="mainTitle">
-        <h1>To DO</h1>
-      </div>
+
       <div class="inputE">
         <input type="text" id="name" name="add" placeholder="Enter name here">
       </div>
       <div class="containerList">
         <ul class="todos"></ul>
+          <div class="bottomForm">
+            <div class="itemsLeft">
+              <p><span id="numberItems"></span> left</p> <!--use if for items or item !-->
+            </div>
+            <div class="allItems">
+              <button onclick="myFunction()">All</button>
+            </div>
+            <div class="activeItems">
+              <button onclick="myFunction()">Active</button>
+            </div>
+            <div class="completedItems">
+              <button onclick="myFunction()">Completed</button>
+            </div>
+            <div class="clear">
+              <button onclick="" class="clears">Clear</button>
+            </div>
+            <div class="completedItems">
+              <button onclick="myFunction()">Completed</button>
+            </div>
+          </div>
+      </div>
       </div>
   </form>
 

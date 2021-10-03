@@ -16,8 +16,15 @@ drag and drop
 
 
 to do
-shadow
 changing cursor to hand
 
 
+if storeditems ===0
+hide bottombar
 
+
+
+problems
+how to upload storedItems when I delete all
+document.getElementById("numberItems").innerHTML = `${storedItems.length} item(s) `;
+console.log(storedItems.length)
